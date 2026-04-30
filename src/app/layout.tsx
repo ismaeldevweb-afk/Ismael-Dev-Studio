@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import {
   siteDescription,
@@ -95,7 +96,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className={`${manrope.variable} ${sora.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
