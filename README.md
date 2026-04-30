@@ -152,7 +152,19 @@ npm run build
 
 ## Deploy
 
-O projeto pode ser publicado em plataformas compatíveis com Next.js, como Vercel.
+O projeto está publicado na Vercel.
+
+URL principal:
+
+```text
+https://ismaeldevstudio.vercel.app
+```
+
+Implantação atual:
+
+```text
+https://ismaeldevstudio-e1n7vnnfb-ismaeldevweb-afks-projects.vercel.app
+```
 
 Configurações recomendadas:
 
