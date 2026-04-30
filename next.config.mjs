@@ -6,7 +6,7 @@ const withBundleAnalyzer = createBundleAnalyzer({
 });
 
 const scriptSrc = ["'self'", "'unsafe-inline'"];
-const connectSrc = ["'self'"];
+const connectSrc = ["'self'", "https://vercel.com", "https://*.vercel.com", "https://vercel-insights.com", "https://*.vercel-insights.com"];
 const styleSrc = ["'self'", "'unsafe-inline'", "https://fonts.googleapis.com"];
 const fontSrc = ["'self'", "data:", "https://fonts.gstatic.com"];
 
