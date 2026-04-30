@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" rx="32" fill="#020617"/>
+  <circle cx="221" cy="142" r="181" fill="#2563EB" fill-opacity="0.2"/>
+  <circle cx="1016" cy="549" r="220" fill="#38BDF8" fill-opacity="0.12"/>
+  <rect x="72" y="74" width="1056" height="482" rx="36" fill="url(#paint0_linear)"/>
+  <rect x="128" y="126" width="76" height="76" rx="24" fill="#2563EB"/>
+  <path d="M152.917 177V151.545H163.278C165.314 151.545 167.052 151.926 168.491 152.688C169.931 153.45 171.031 154.514 171.792 155.881C172.554 157.232 172.935 158.803 172.935 160.594C172.935 162.384 172.546 163.955 171.767 165.306C170.988 166.657 169.857 167.712 168.374 168.474C166.907 169.236 165.119 169.617 163.011 169.617H156.933V164.934H162.067C163.174 164.934 164.084 164.745 164.798 164.368C165.528 163.972 166.067 163.429 166.414 162.739C166.777 162.036 166.959 161.321 166.959 160.594C166.959 159.851 166.777 159.14 166.414 158.463C166.067 157.769 165.528 157.232 164.798 156.854C164.067 156.461 163.145 156.265 162.03 156.265H158.673V177H152.917Z" fill="white"/>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Verdana, Arial, sans-serif" font-size="68" font-weight="700" letter-spacing="-0.04em"><tspan x="128" y="286.172">Ismael Dev Studio</tspan></text>
+  <text fill="#BFDBFE" xml:space="preserve" style="white-space: pre" font-family="Verdana, Arial, sans-serif" font-size="32" font-weight="400" letter-spacing="-0.02em"><tspan x="128" y="352.414">Landing pages, sites profissionais, portf&#xf3;lios digitais e solu&#xe7;&#xf5;es com IA.</tspan></text>
+  <rect x="128" y="409" width="222" height="58" rx="29" fill="#2563EB"/>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Verdana, Arial, sans-serif" font-size="26" font-weight="700" letter-spacing="-0.02em"><tspan x="166" y="446.758">Web + IA</tspan></text>
+  <rect x="735" y="180" width="280" height="212" rx="28" fill="white" fill-opacity="0.08"/>
+  <rect x="772" y="222" width="108" height="18" rx="9" fill="white" fill-opacity="0.72"/>
+  <rect x="772" y="254" width="196" height="12" rx="6" fill="white" fill-opacity="0.22"/>
+  <rect x="772" y="278" width="162" height="12" rx="6" fill="white" fill-opacity="0.22"/>
+  <rect x="772" y="328" width="112" height="36" rx="18" fill="#10B981"/>
+  <text fill="white" xml:space="preserve" style="white-space: pre" font-family="Verdana, Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="-0.02em"><tspan x="796" y="351.969">Contato</tspan></text>
+  <rect x="913" y="141" width="147" height="58" rx="22" fill="white"/>
+  <rect x="935" y="159" width="34" height="24" rx="12" fill="#DBEAFE"/>
+  <text fill="#0F172A" xml:space="preserve" style="white-space: pre" font-family="Verdana, Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="-0.02em"><tspan x="979" y="177.367">IA aplicada</tspan></text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="72" y1="74" x2="1128" y2="556" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="0.52" stop-color="#172554"/>
+      <stop offset="1" stop-color="#0F172A"/>
+    </linearGradient>
+  </defs>
+</svg>
