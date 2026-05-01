@@ -6,8 +6,10 @@ import Hero from "@/interfaces/components/marketing/Hero";
 import Process from "@/interfaces/components/marketing/Process";
 import Projects from "@/interfaces/components/marketing/Projects";
 import Services from "@/interfaces/components/marketing/Services";
+import StrategicSeo from "@/interfaces/components/marketing/StrategicSeo";
 import WhatsAppFloat from "@/interfaces/components/marketing/WhatsAppFloat";
 import {
+  createFaqJsonLd,
   createProfessionalServiceJsonLd,
   createWebSiteJsonLd,
 } from "@/lib/structured-data";
@@ -16,6 +18,7 @@ export default function HomePage() {
   const structuredData = [
     createProfessionalServiceJsonLd(),
     createWebSiteJsonLd(),
+    createFaqJsonLd(),
   ];
 
   return (
@@ -32,6 +35,7 @@ export default function HomePage() {
         <Services />
         <Projects />
         <Process />
+        <StrategicSeo />
         <AboutAndPlans />
         <FinalCTA />
         <Footer />

@@ -4,6 +4,8 @@ import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import {
+  founderName,
+  seoTitle,
   siteDescription,
   siteKeywords,
   siteTitle,
@@ -47,9 +49,13 @@ const sora = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: siteTitle,
+    default: seoTitle,
     template: `%s | ${siteTitle}`,
   },
+  applicationName: siteTitle,
+  authors: [{ name: founderName }],
+  creator: founderName,
+  publisher: siteTitle,
   description: siteDescription,
   keywords: siteKeywords,
   alternates: {
@@ -59,7 +65,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     url: siteUrl,
-    title: siteTitle,
+    title: seoTitle,
     description: siteDescription,
     siteName: siteTitle,
     images: [
@@ -73,7 +79,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: siteTitle,
+    title: seoTitle,
     description: siteDescription,
     images: [socialPreviewUrl],
   },
@@ -82,6 +88,9 @@ export const metadata: Metadata = {
     follow: true,
   },
   category: "technology",
+  other: {
+    "format-detection": "telephone=no",
+  },
 };
 
 export const viewport: Viewport = {

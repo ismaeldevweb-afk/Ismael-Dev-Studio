@@ -11,6 +11,7 @@ import {
 import type {
   AboutHighlightItem,
   BenefitItem,
+  FaqItem,
   NavigationItem,
   PlanItem,
   ProjectItem,
@@ -21,6 +22,7 @@ import type {
 export const navigationItems: readonly NavigationItem[] = [
   { label: "Serviços", href: "#servicos" },
   { label: "Projetos", href: "#projetos" },
+  { label: "SEO", href: "#seo-conversao" },
   { label: "Processo", href: "#processo" },
   { label: "Planos", href: "#planos" },
   { label: "Sobre", href: "#sobre" },
@@ -59,6 +61,12 @@ export const services: readonly ServiceItem[] = [
     benefit:
       "Você ganha velocidade na entrega sem abrir mão de uma apresentação clara e profissional.",
   },
+];
+
+export const conversionPoints: readonly string[] = [
+  "Estrutura pensada para gerar contato, não apenas para ficar bonita.",
+  "Texto, seções e botões organizados para o visitante entender rápido.",
+  "Entrega responsiva, com SEO técnico básico e integração direta com WhatsApp.",
 ];
 
 export const projects: readonly ProjectItem[] = [
@@ -211,5 +219,33 @@ export const aboutHighlights: readonly AboutHighlightItem[] = [
     title: "Contato facilitado",
     description:
       "O objetivo final é simples: transformar visita em contato com caminhos diretos para WhatsApp e ação.",
+  },
+];
+
+export const faqs: readonly FaqItem[] = [
+  {
+    question: "Que tipo de site posso pedir?",
+    answer:
+      "Você pode pedir landing page, site institucional, portfólio profissional ou página de apresentação para divulgar serviços, projetos, produtos e canais de contato.",
+  },
+  {
+    question: "O site já fica pronto para aparecer no Google?",
+    answer:
+      "A entrega inclui estrutura técnica de SEO, metadados, sitemap, robots, performance e conteúdo organizado. O ranqueamento depende de concorrência, autoridade do domínio e evolução contínua do conteúdo.",
+  },
+  {
+    question: "Preciso ter textos e imagens prontos?",
+    answer:
+      "Não necessariamente. Se você ainda não tiver tudo pronto, eu ajudo a organizar as informações principais, melhorar a clareza da oferta e orientar quais imagens funcionam melhor.",
+  },
+  {
+    question: "O site funciona bem no celular?",
+    answer:
+      "Sim. A página é desenvolvida com layout responsivo para celular, tablet e desktop, com botões de contato fáceis de acessar pelo WhatsApp.",
+  },
+  {
+    question: "Como peço um orçamento?",
+    answer:
+      "Basta chamar no WhatsApp e explicar seu objetivo, tipo de negócio e o que precisa divulgar. Com isso, eu consigo indicar o plano mais adequado e os próximos passos.",
   },
 ];

@@ -13,6 +13,7 @@ import {
   socialPreviewUrl,
   whatsappNumber,
 } from "@/config/site";
+import { faqs, plans, services } from "@/interfaces/data/site-content";
 
 export function createProfessionalServiceJsonLd() {
   const sameAs = [hasGithubProfile ? githubUrl : null, hasLinkedinProfile ? linkedinUrl : null]
@@ -33,12 +34,16 @@ export function createProfessionalServiceJsonLd() {
     ...(hasRealContactEmail ? { email: contactEmail } : {}),
     ...(hasRealWhatsappNumber ? { telephone: `+${whatsappNumber}` } : {}),
     areaServed: "Brasil",
-    serviceType: [
-      "Landing Pages",
-      "Sites Profissionais",
-      "Portfólios Digitais",
-      "Soluções com IA",
-    ],
+    serviceType: services.map((service) => service.title),
+    makesOffer: plans.map((plan) => ({
+      "@type": "Offer",
+      name: plan.name,
+      description: plan.description,
+      price: plan.price.replace(/\D/g, ""),
+      priceCurrency: "BRL",
+      availability: "https://schema.org/InStock",
+      url: siteUrl,
+    })),
   };
 }
 
@@ -53,5 +58,20 @@ export function createWebSiteJsonLd() {
       "@type": "Organization",
       name: siteTitle,
     },
+  };
+}
+
+export function createFaqJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
   };
 }
