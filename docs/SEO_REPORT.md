@@ -8,7 +8,7 @@ Base da análise: código-fonte do projeto e verificação HTTP/HTML da URL publ
 
 O site tem uma base técnica sólida para SEO: metadados principais, canonical, Open Graph, Twitter Card, sitemap, robots.txt, HTTPS, headers de segurança, dados estruturados e conteúdo focado em serviços. A página também já possui blocos de conversão com CTA para WhatsApp, planos, projetos, FAQ e proposta de valor clara.
 
-Atualização: os dados públicos de WhatsApp, GitHub e LinkedIn foram configurados no projeto. Após o próximo deploy, é necessário validar se o HTML publicado já aponta para o WhatsApp real.
+Atualização: os dados públicos de WhatsApp, GitHub e LinkedIn foram configurados e validados no HTML publicado.
 
 ## Pontuação Geral
 
@@ -18,10 +18,10 @@ Atualização: os dados públicos de WhatsApp, GitHub e LinkedIn foram configura
 | Conteúdo e intenção de busca | 8/10 | Forte |
 | Dados estruturados | 8/10 | Forte |
 | Performance e experiência | 8/10 | Boa base |
-| Conversão | 8/10 | Boa estrutura e canais reais configurados |
+| Conversão | 8.5/10 | Boa estrutura e canais reais configurados |
 | Autoridade e crescimento orgânico | 5/10 | Precisa de conteúdo e sinais externos |
 
-Nota geral estimada: 7.5/10.
+Nota geral estimada: 8/10.
 
 ## Verificações Técnicas
 
@@ -40,6 +40,10 @@ Nota geral estimada: 7.5/10.
 | Robots | `https://ismaeldevstudio.vercel.app/robots.txt` retorna `200` |
 | Analytics | Vercel Analytics ativo |
 | Speed Insights | Vercel Speed Insights ativo |
+| WhatsApp publicado | `https://wa.me/5514991920560` |
+| GitHub publicado | `https://github.com/ismaeldevweb-afk` |
+| LinkedIn publicado | `https://www.linkedin.com/in/ismael-nunes-dos-santos` |
+| Tamanho do HTML | Aproximadamente 176 KB |
 
 ## Title e Meta Description
 
@@ -135,7 +139,7 @@ NEXT_PUBLIC_GITHUB_URL=https://github.com/ismaeldevweb-afk
 NEXT_PUBLIC_LINKEDIN_URL=https://www.linkedin.com/in/ismael-nunes-dos-santos
 ```
 
-Depois do deploy, valide o HTML publicado para confirmar que os links reais estão ativos.
+Status: validado no HTML publicado.
 
 ## Sitemap e Robots
 
@@ -191,8 +195,8 @@ Avaliação: forte. Esses headers não ranqueiam diretamente por si só, mas aju
 1. Configurar `NEXT_PUBLIC_CONTACT_EMAIL` real.
 2. Cadastrar o domínio no Google Search Console.
 3. Enviar o sitemap no Search Console.
-4. Validar no site publicado se WhatsApp, GitHub e LinkedIn estão corretos após o deploy.
-5. Acompanhar cliques e visitas no Vercel Analytics.
+4. Acompanhar cliques e visitas no Vercel Analytics.
+5. Acompanhar consultas, impressões e CTR no Google Search Console.
 
 ### Média prioridade
 
@@ -213,9 +217,9 @@ Avaliação: forte. Esses headers não ranqueiam diretamente por si só, mas aju
 Primeiros 7 dias:
 
 - Configurar e-mail real.
-- Conferir se o novo deploy mostra WhatsApp, GitHub e LinkedIn corretos.
 - Cadastrar site no Google Search Console.
 - Enviar sitemap.
+- Acompanhar as primeiras visitas no Vercel Analytics.
 
 Próximos 30 dias:
 
@@ -232,6 +236,6 @@ Próximos 90 dias:
 
 ## Conclusão
 
-O projeto está bem preparado tecnicamente para indexação e tem uma estrutura comercial melhor que a média de sites institucionais simples. Com WhatsApp, GitHub e LinkedIn configurados, o próximo ponto de atenção é validar o deploy publicado e configurar um e-mail real.
+O projeto está bem preparado tecnicamente para indexação e tem uma estrutura comercial melhor que a média de sites institucionais simples. Com WhatsApp, GitHub e LinkedIn configurados e validados no deploy, o próximo ponto de atenção é configurar um e-mail real e iniciar o acompanhamento no Google Search Console.
 
-Depois dessa correção, o próximo salto de SEO virá da criação de páginas específicas para serviços e nichos, porque uma única home dificilmente cobre todas as buscas comerciais relevantes.
+Depois dessa etapa, o próximo salto de SEO virá da criação de páginas específicas para serviços e nichos, porque uma única home dificilmente cobre todas as buscas comerciais relevantes.
