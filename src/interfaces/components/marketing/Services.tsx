@@ -18,7 +18,7 @@ export default function Services() {
           </p>
         </div>
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-          {services.map(({ icon: Icon, title, description, benefit }) => (
+          {services.map(({ icon: Icon, title, description, benefit, href }) => (
             <article
               key={title}
               className="group flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/10"
@@ -31,11 +31,19 @@ export default function Services() {
               <div className="mt-5 rounded-xl border border-slate-200 bg-slate-50 p-4">
                 <p className="text-sm font-bold leading-6 text-slate-800">{benefit}</p>
               </div>
+              {href ? (
+                <a
+                  href={href}
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-blue-700 transition hover:text-blue-900"
+                >
+                  Ver detalhes do serviço <ArrowRight size={16} />
+                </a>
+              ) : null}
               <a
                 href={whatsappUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-6 inline-flex items-center gap-2 text-sm font-bold text-slate-900 transition hover:text-blue-600"
+                className="mt-3 inline-flex items-center gap-2 text-sm font-bold text-slate-900 transition hover:text-blue-600"
               >
                 Conversar sobre esse serviço <ArrowRight size={16} />
               </a>

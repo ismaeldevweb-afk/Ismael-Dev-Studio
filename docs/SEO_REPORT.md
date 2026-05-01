@@ -10,6 +10,8 @@ O site tem uma base técnica sólida para SEO: metadados principais, canonical, 
 
 Atualização: os dados públicos de WhatsApp, GitHub e LinkedIn foram configurados e validados no HTML publicado.
 
+Atualização de crescimento orgânico: foram criadas páginas específicas para capturar buscas comerciais por serviço e nicho.
+
 ## Pontuação Geral
 
 | Área | Nota | Status |
@@ -44,6 +46,20 @@ Nota geral estimada: 8/10.
 | GitHub publicado | `https://github.com/ismaeldevweb-afk` |
 | LinkedIn publicado | `https://www.linkedin.com/in/ismael-nunes-dos-santos` |
 | Tamanho do HTML | Aproximadamente 176 KB |
+
+## Páginas de Crescimento Orgânico
+
+Novas URLs planejadas para ranquear por intenção comercial:
+
+| Página | Palavra-chave foco |
+| --- | --- |
+| `/criacao-de-sites-profissionais` | criação de sites profissionais |
+| `/landing-page-para-pequenos-negocios` | landing page para pequenos negócios |
+| `/site-para-autonomos` | site para autônomos |
+| `/site-para-restaurantes` | site para restaurantes |
+| `/portfolio-digital` | portfólio digital |
+
+Essas páginas devem entrar no sitemap e receber links internos a partir da home e do rodapé.
 
 ## Title e Meta Description
 
@@ -157,7 +173,7 @@ https://ismaeldevstudio.vercel.app/robots.txt
 
 Avaliação: ambos estão ativos e acessíveis.
 
-Observação: o site atualmente possui uma página principal. Para crescimento orgânico, o sitemap deve evoluir quando novas páginas forem adicionadas.
+Observação: o sitemap agora deve evoluir de uma única home para incluir páginas específicas de serviço e nicho.
 
 ## Performance e Experiência
 
@@ -200,8 +216,8 @@ Avaliação: forte. Esses headers não ranqueiam diretamente por si só, mas aju
 
 ### Média prioridade
 
-1. Criar páginas específicas para serviços: landing pages, sites profissionais, portfólios e soluções com IA.
-2. Criar páginas por nicho: restaurantes, lojas, profissionais autônomos e negócios locais.
+1. Expandir as páginas específicas com provas sociais, exemplos reais e perguntas frequentes adicionais.
+2. Criar novas páginas por nicho: lojas, advogados, psicólogos e prestadores de serviço locais.
 3. Adicionar depoimentos reais ou provas sociais quando disponíveis.
 4. Criar uma seção de resultados/cases com contexto, desafio e solução.
 5. Monitorar Analytics e Speed Insights após tráfego real.
@@ -223,8 +239,8 @@ Primeiros 7 dias:
 
 Próximos 30 dias:
 
-- Criar 3 páginas de serviço com conteúdo específico.
-- Criar pelo menos 2 páginas por nicho de cliente.
+- Validar indexação das novas páginas no Search Console.
+- Criar pelo menos 2 novas páginas por nicho de cliente.
 - Adicionar prova social, prints ou cases reais.
 - Revisar dados do Vercel Analytics.
 
@@ -238,4 +254,4 @@ Próximos 90 dias:
 
 O projeto está bem preparado tecnicamente para indexação e tem uma estrutura comercial melhor que a média de sites institucionais simples. Com WhatsApp, GitHub e LinkedIn configurados e validados no deploy, o próximo ponto de atenção é configurar um e-mail real e iniciar o acompanhamento no Google Search Console.
 
-Depois dessa etapa, o próximo salto de SEO virá da criação de páginas específicas para serviços e nichos, porque uma única home dificilmente cobre todas as buscas comerciais relevantes.
+Depois dessa etapa, o próximo salto de SEO virá de enriquecer essas páginas com exemplos reais, depoimentos e expansão para novos nichos.

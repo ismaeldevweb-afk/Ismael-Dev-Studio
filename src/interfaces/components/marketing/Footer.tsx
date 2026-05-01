@@ -10,7 +10,7 @@ import {
 } from "@/config/site";
 import {
   navigationItems,
-  services,
+  servicePages,
 } from "@/interfaces/data/site-content";
 
 export default function Footer() {
@@ -69,8 +69,14 @@ export default function Footer() {
         <div>
           <h3 className="font-extrabold">Serviços</h3>
           <div className="mt-4 grid gap-2 text-sm text-slate-200">
-            {services.map((service) => (
-              <span key={service.title}>{service.title}</span>
+            {servicePages.map((service) => (
+              <a
+                key={service.slug}
+                href={`/${service.slug}`}
+                className="transition hover:text-white"
+              >
+                {service.label}
+              </a>
             ))}
           </div>
         </div>

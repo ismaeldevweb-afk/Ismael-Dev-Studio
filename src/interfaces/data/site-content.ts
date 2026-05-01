@@ -15,23 +15,25 @@ import type {
   NavigationItem,
   PlanItem,
   ProjectItem,
+  ServicePageItem,
   ServiceItem,
   StepItem,
 } from "@/interfaces/types/site";
 
 export const navigationItems: readonly NavigationItem[] = [
-  { label: "Serviços", href: "#servicos" },
-  { label: "Projetos", href: "#projetos" },
-  { label: "SEO", href: "#seo-conversao" },
-  { label: "Processo", href: "#processo" },
-  { label: "Planos", href: "#planos" },
-  { label: "Sobre", href: "#sobre" },
+  { label: "Serviços", href: "/#servicos" },
+  { label: "Projetos", href: "/#projetos" },
+  { label: "SEO", href: "/#seo-conversao" },
+  { label: "Processo", href: "/#processo" },
+  { label: "Planos", href: "/#planos" },
+  { label: "Sobre", href: "/#sobre" },
 ];
 
 export const services: readonly ServiceItem[] = [
   {
     icon: Globe2,
     title: "Landing Pages",
+    href: "/landing-page-para-pequenos-negocios",
     description:
       "Páginas enxutas para apresentar uma oferta, destacar diferenciais e levar o visitante direto para o WhatsApp.",
     benefit:
@@ -40,6 +42,7 @@ export const services: readonly ServiceItem[] = [
   {
     icon: BriefcaseBusiness,
     title: "Sites Profissionais",
+    href: "/criacao-de-sites-profissionais",
     description:
       "Sites profissionais para pequenos negócios mostrarem serviços, estrutura, confiança e canais de atendimento.",
     benefit:
@@ -48,6 +51,7 @@ export const services: readonly ServiceItem[] = [
   {
     icon: Code2,
     title: "Portfólios Digitais",
+    href: "/portfolio-digital",
     description:
       "Páginas pessoais para apresentar experiência, projetos, currículo e links importantes em um endereço profissional.",
     benefit:
@@ -247,5 +251,243 @@ export const faqs: readonly FaqItem[] = [
     question: "Como peço um orçamento?",
     answer:
       "Basta chamar no WhatsApp e explicar seu objetivo, tipo de negócio e o que precisa divulgar. Com isso, eu consigo indicar o plano mais adequado e os próximos passos.",
+  },
+];
+
+export const servicePages: readonly ServicePageItem[] = [
+  {
+    slug: "criacao-de-sites-profissionais",
+    label: "Criação de sites profissionais",
+    title: "Criação de Sites Profissionais | Ismael Dev Studio",
+    description:
+      "Criação de sites profissionais para pequenos negócios, autônomos e prestadores de serviço que precisam transmitir confiança e gerar contatos pelo WhatsApp.",
+    eyebrow: "Site profissional",
+    heroTitle: "Criação de sites profissionais para vender melhor sua imagem online",
+    heroDescription:
+      "Desenvolvo sites claros, responsivos e preparados para apresentar seus serviços, reforçar autoridade e facilitar o contato com clientes interessados.",
+    primaryKeyword: "criação de sites profissionais",
+    audience: "Pequenos negócios, profissionais liberais e prestadores de serviço",
+    outcomes: [
+      "Presença digital mais confiável para divulgar em redes sociais e propostas.",
+      "Estrutura com seções de serviços, diferenciais, projetos e contato.",
+      "SEO técnico básico, carregamento rápido e layout responsivo.",
+    ],
+    sections: [
+      {
+        title: "Estrutura pensada para confiança",
+        description:
+          "O site organiza quem você é, o que oferece, quais diferenciais sustentam sua entrega e como o visitante pode falar com você.",
+      },
+      {
+        title: "Conteúdo direto para decisão",
+        description:
+          "Textos, blocos e chamadas são construídos para reduzir dúvida e levar o visitante ao próximo passo com clareza.",
+      },
+      {
+        title: "Entrega pronta para divulgação",
+        description:
+          "Você recebe uma página online, responsiva e preparada para compartilhar em bio, WhatsApp, cartões digitais e campanhas.",
+      },
+    ],
+    faq: [
+      {
+        question: "Quanto tempo leva para criar um site profissional?",
+        answer:
+          "O prazo depende do tamanho do conteúdo e das seções necessárias, mas páginas institucionais simples podem avançar rapidamente após o alinhamento inicial.",
+      },
+      {
+        question: "O site profissional funciona no celular?",
+        answer:
+          "Sim. A página é desenvolvida com layout responsivo para celular, tablet e desktop.",
+      },
+    ],
+  },
+  {
+    slug: "landing-page-para-pequenos-negocios",
+    label: "Landing page para pequenos negócios",
+    title: "Landing Page para Pequenos Negócios | Ismael Dev Studio",
+    description:
+      "Landing page para pequenos negócios que precisam apresentar uma oferta, destacar diferenciais e receber contatos qualificados pelo WhatsApp.",
+    eyebrow: "Landing page",
+    heroTitle: "Landing page para pequenos negócios com foco em conversão",
+    heroDescription:
+      "Crio páginas objetivas para divulgar ofertas, campanhas, serviços e lançamentos com mensagem clara e botão direto para contato.",
+    primaryKeyword: "landing page para pequenos negócios",
+    audience: "Negócios locais, serviços de bairro, campanhas e ofertas pontuais",
+    outcomes: [
+      "Página focada em uma oferta principal e em um próximo passo claro.",
+      "Argumentos organizados para aumentar confiança antes do clique.",
+      "Contato direto pelo WhatsApp para transformar visita em conversa.",
+    ],
+    sections: [
+      {
+        title: "Uma página para uma decisão",
+        description:
+          "A landing page remove distrações e apresenta a oferta em uma sequência simples: promessa, benefícios, prova, plano de ação e contato.",
+      },
+      {
+        title: "Ideal para campanhas",
+        description:
+          "Funciona bem para anúncios, divulgação no Instagram, links de bio, QR Code, promoções e validação de novas ofertas.",
+      },
+      {
+        title: "Medição e evolução",
+        description:
+          "Com Vercel Analytics, você acompanha visitas e pode evoluir a mensagem conforme os dados reais aparecerem.",
+      },
+    ],
+    faq: [
+      {
+        question: "Landing page é diferente de site completo?",
+        answer:
+          "Sim. A landing page é mais focada em uma oferta ou objetivo específico, enquanto um site completo costuma apresentar mais áreas do negócio.",
+      },
+      {
+        question: "Posso usar a landing page em anúncios?",
+        answer:
+          "Sim. Ela é indicada para campanhas porque direciona o visitante para uma ação principal.",
+      },
+    ],
+  },
+  {
+    slug: "site-para-autonomos",
+    label: "Site para autônomos",
+    title: "Site para Autônomos | Ismael Dev Studio",
+    description:
+      "Site para autônomos apresentarem serviços, experiência, diferenciais e canais de contato com aparência profissional e foco em credibilidade.",
+    eyebrow: "Autônomos",
+    heroTitle: "Site para autônomos que precisam parecer profissionais desde o primeiro acesso",
+    heroDescription:
+      "Uma página clara para mostrar seus serviços, organizar sua apresentação e facilitar o contato de clientes que estão comparando opções.",
+    primaryKeyword: "site para autônomos",
+    audience: "Autônomos, freelancers, técnicos, consultores e profissionais liberais",
+    outcomes: [
+      "Apresentação profissional para enviar a clientes e parceiros.",
+      "Seções para serviços, experiência, diferenciais e formas de contato.",
+      "Mais autoridade do que depender apenas de perfil em rede social.",
+    ],
+    sections: [
+      {
+        title: "Sua apresentação em um link",
+        description:
+          "O site reúne serviços, informações essenciais, fotos, provas de confiança e contato em uma página que pode ser enviada facilmente.",
+      },
+      {
+        title: "Mais credibilidade em orçamentos",
+        description:
+          "Um endereço profissional ajuda o cliente a entender sua entrega antes de pedir preço ou fechar o serviço.",
+      },
+      {
+        title: "Contato sem complicação",
+        description:
+          "Botões de WhatsApp e links sociais reduzem atrito para o visitante iniciar uma conversa.",
+      },
+    ],
+    faq: [
+      {
+        question: "Sou autônomo e ainda não tenho marca. Posso fazer mesmo assim?",
+        answer:
+          "Sim. A página pode começar com seu nome, sua área de atuação e uma comunicação simples, evoluindo depois com identidade visual mais completa.",
+      },
+      {
+        question: "O site ajuda a fechar orçamento?",
+        answer:
+          "Ele melhora sua apresentação e reduz dúvidas, mas o fechamento também depende da oferta, atendimento, prova social e preço.",
+      },
+    ],
+  },
+  {
+    slug: "site-para-restaurantes",
+    label: "Site para restaurantes",
+    title: "Site para Restaurantes | Ismael Dev Studio",
+    description:
+      "Site para restaurantes divulgarem cardápio, fotos, reservas, localização e pedidos pelo WhatsApp com apresentação responsiva e profissional.",
+    eyebrow: "Restaurantes",
+    heroTitle: "Site para restaurantes com cardápio, fotos e pedido rápido pelo WhatsApp",
+    heroDescription:
+      "Crio páginas para valorizar o ambiente, mostrar pratos, orientar reservas e facilitar o pedido de clientes pelo celular.",
+    primaryKeyword: "site para restaurantes",
+    audience: "Restaurantes, pizzarias, lanchonetes, bares e negócios de alimentação",
+    outcomes: [
+      "Cardápio e diferenciais organizados para consulta rápida.",
+      "Fotos e chamadas que valorizam o ambiente e os pratos.",
+      "Botões para reservas, localização e pedidos pelo WhatsApp.",
+    ],
+    sections: [
+      {
+        title: "Cardápio fácil de consultar",
+        description:
+          "A página pode destacar pratos principais, categorias, promoções e caminhos rápidos para pedido ou reserva.",
+      },
+      {
+        title: "Visual que abre o apetite",
+        description:
+          "Imagens, seções e chamadas ajudam o visitante a imaginar a experiência antes de decidir visitar ou pedir.",
+      },
+      {
+        title: "Do Instagram para o pedido",
+        description:
+          "O site funciona como destino profissional para links de bio, QR Codes, campanhas e compartilhamento no WhatsApp.",
+      },
+    ],
+    faq: [
+      {
+        question: "O site pode ter cardápio?",
+        answer:
+          "Sim. A página pode incluir cardápio em seções, destaques de produtos e botões para pedido.",
+      },
+      {
+        question: "É possível incluir localização e reservas?",
+        answer:
+          "Sim. A página pode ter links para mapa, WhatsApp, telefone e chamadas específicas para reserva.",
+      },
+    ],
+  },
+  {
+    slug: "portfolio-digital",
+    label: "Portfólio digital",
+    title: "Portfólio Digital Profissional | Ismael Dev Studio",
+    description:
+      "Portfólio digital para profissionais, estudantes e devs apresentarem experiência, projetos, currículo e links importantes em uma página profissional.",
+    eyebrow: "Portfólio",
+    heroTitle: "Portfólio digital para apresentar sua trajetória com clareza",
+    heroDescription:
+      "Crio páginas pessoais para organizar experiência, projetos, habilidades e links importantes em uma presença digital mais profissional.",
+    primaryKeyword: "portfólio digital",
+    audience: "Profissionais, estudantes, devs iniciantes, freelancers e criativos",
+    outcomes: [
+      "Página pessoal com apresentação, projetos, habilidades e contatos.",
+      "Link profissional para currículo, LinkedIn, GitHub e candidaturas.",
+      "Mais controle sobre como sua experiência aparece online.",
+    ],
+    sections: [
+      {
+        title: "Projetos com contexto",
+        description:
+          "Cada projeto pode mostrar objetivo, tecnologias, resultados e links, ajudando recrutadores e clientes a entenderem seu nível.",
+      },
+      {
+        title: "Currículo mais apresentável",
+        description:
+          "O portfólio complementa o currículo tradicional com uma experiência visual e navegável.",
+      },
+      {
+        title: "Presença própria",
+        description:
+          "Você deixa de depender apenas das redes sociais e passa a ter um endereço profissional para compartilhar.",
+      },
+    ],
+    faq: [
+      {
+        question: "Portfólio digital serve para quem está começando?",
+        answer:
+          "Sim. Mesmo com poucos projetos, é possível organizar estudos, experiências, habilidades e objetivos de forma profissional.",
+      },
+      {
+        question: "Posso incluir GitHub e LinkedIn?",
+        answer:
+          "Sim. O portfólio pode destacar seus principais links, currículo, redes profissionais e formas de contato.",
+      },
+    ],
   },
 ];

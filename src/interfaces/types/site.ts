@@ -10,6 +10,7 @@ export interface ServiceItem {
   title: string;
   description: string;
   benefit: string;
+  href?: string;
 }
 
 export interface ProjectItem {
@@ -52,4 +53,22 @@ export interface AboutHighlightItem {
 export interface FaqItem {
   question: string;
   answer: string;
+}
+
+export interface ServicePageItem {
+  slug: string;
+  label: string;
+  title: string;
+  description: string;
+  eyebrow: string;
+  heroTitle: string;
+  heroDescription: string;
+  primaryKeyword: string;
+  audience: string;
+  outcomes: string[];
+  sections: Array<{
+    title: string;
+    description: string;
+  }>;
+  faq: FaqItem[];
 }
