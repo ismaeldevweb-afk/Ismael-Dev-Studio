@@ -61,6 +61,17 @@ Novas URLs planejadas para ranquear por intenção comercial:
 
 Essas páginas devem entrar no sitemap e receber links internos a partir da home e do rodapé.
 
+Organização recomendada por intenção:
+
+| Página | Palavra-chave principal | Palavras secundárias |
+| --- | --- | --- |
+| `/` | criação de sites profissionais | landing pages, sites para pequenos negócios, site com WhatsApp |
+| `/criacao-de-sites-profissionais` | criação de sites profissionais | site institucional, site responsivo, desenvolvedor de sites |
+| `/landing-page-para-pequenos-negocios` | landing page para pequenos negócios | landing page profissional, página de vendas, captar clientes |
+| `/site-para-autonomos` | site para autônomos | site profissional para autônomos, presença digital, WhatsApp |
+| `/site-para-restaurantes` | site para restaurantes | cardápio online, pedidos pelo WhatsApp, restaurante delivery |
+| `/portfolio-digital` | portfólio digital | portfólio profissional, página pessoal, portfólio para dev |
+
 ## Title e Meta Description
 
 Title atual:

@@ -37,7 +37,12 @@ export function generateMetadata({ params }: ServiceRouteProps): Metadata {
   return {
     title: page.title,
     description: page.description,
-    keywords: [page.primaryKeyword, page.label, "Ismael Dev Studio"],
+    keywords: [
+      page.primaryKeyword,
+      ...page.secondaryKeywords,
+      page.label,
+      "Ismael Dev Studio",
+    ],
     alternates: {
       canonical: url,
     },

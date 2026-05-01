@@ -266,6 +266,7 @@ export const servicePages: readonly ServicePageItem[] = [
     heroDescription:
       "Desenvolvo sites claros, responsivos e preparados para apresentar seus serviços, reforçar autoridade e facilitar o contato com clientes interessados.",
     primaryKeyword: "criação de sites profissionais",
+    secondaryKeywords: ["site institucional", "site responsivo", "desenvolvedor de sites"],
     audience: "Pequenos negócios, profissionais liberais e prestadores de serviço",
     outcomes: [
       "Presença digital mais confiável para divulgar em redes sociais e propostas.",
@@ -313,6 +314,7 @@ export const servicePages: readonly ServicePageItem[] = [
     heroDescription:
       "Crio páginas objetivas para divulgar ofertas, campanhas, serviços e lançamentos com mensagem clara e botão direto para contato.",
     primaryKeyword: "landing page para pequenos negócios",
+    secondaryKeywords: ["landing page profissional", "página de vendas", "captar clientes"],
     audience: "Negócios locais, serviços de bairro, campanhas e ofertas pontuais",
     outcomes: [
       "Página focada em uma oferta principal e em um próximo passo claro.",
@@ -360,6 +362,11 @@ export const servicePages: readonly ServicePageItem[] = [
     heroDescription:
       "Uma página clara para mostrar seus serviços, organizar sua apresentação e facilitar o contato de clientes que estão comparando opções.",
     primaryKeyword: "site para autônomos",
+    secondaryKeywords: [
+      "site profissional para autônomos",
+      "presença digital",
+      "WhatsApp",
+    ],
     audience: "Autônomos, freelancers, técnicos, consultores e profissionais liberais",
     outcomes: [
       "Apresentação profissional para enviar a clientes e parceiros.",
@@ -399,14 +406,15 @@ export const servicePages: readonly ServicePageItem[] = [
   {
     slug: "site-para-restaurantes",
     label: "Site para restaurantes",
-    title: "Site para Restaurantes | Ismael Dev Studio",
+    title: "Site para Restaurantes com Cardápio e WhatsApp | Ismael Dev Studio",
     description:
-      "Site para restaurantes divulgarem cardápio, fotos, reservas, localização e pedidos pelo WhatsApp com apresentação responsiva e profissional.",
+      "Criação de site para restaurantes, pizzarias e negócios de alimentação com cardápio, apresentação profissional e botão direto para pedidos pelo WhatsApp.",
     eyebrow: "Restaurantes",
-    heroTitle: "Site para restaurantes com cardápio, fotos e pedido rápido pelo WhatsApp",
+    heroTitle: "Site para restaurantes que querem receber mais pedidos pelo WhatsApp",
     heroDescription:
       "Crio páginas para valorizar o ambiente, mostrar pratos, orientar reservas e facilitar o pedido de clientes pelo celular.",
     primaryKeyword: "site para restaurantes",
+    secondaryKeywords: ["cardápio online", "pedidos pelo WhatsApp", "restaurante delivery"],
     audience: "Restaurantes, pizzarias, lanchonetes, bares e negócios de alimentação",
     outcomes: [
       "Cardápio e diferenciais organizados para consulta rápida.",
@@ -454,6 +462,7 @@ export const servicePages: readonly ServicePageItem[] = [
     heroDescription:
       "Crio páginas pessoais para organizar experiência, projetos, habilidades e links importantes em uma presença digital mais profissional.",
     primaryKeyword: "portfólio digital",
+    secondaryKeywords: ["portfólio profissional", "página pessoal", "portfólio para dev"],
     audience: "Profissionais, estudantes, devs iniciantes, freelancers e criativos",
     outcomes: [
       "Página pessoal com apresentação, projetos, habilidades e contatos.",

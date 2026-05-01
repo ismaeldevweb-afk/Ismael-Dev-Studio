@@ -64,6 +64,7 @@ export interface ServicePageItem {
   heroTitle: string;
   heroDescription: string;
   primaryKeyword: string;
+  secondaryKeywords: string[];
   audience: string;
   outcomes: string[];
   sections: Array<{
