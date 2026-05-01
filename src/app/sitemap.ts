@@ -6,7 +6,7 @@ const baseUrl = siteUrl.replace(/\/$/, "");
 
 function createUrl(path = "") {
   if (!path) {
-    return baseUrl;
+    return `${baseUrl}/`;
   }
 
   return `${baseUrl}/${path.replace(/^\/+/, "")}`;
