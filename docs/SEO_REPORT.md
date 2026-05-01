@@ -8,7 +8,7 @@ Base da análise: código-fonte do projeto e verificação HTTP/HTML da URL publ
 
 O site tem uma base técnica sólida para SEO: metadados principais, canonical, Open Graph, Twitter Card, sitemap, robots.txt, HTTPS, headers de segurança, dados estruturados e conteúdo focado em serviços. A página também já possui blocos de conversão com CTA para WhatsApp, planos, projetos, FAQ e proposta de valor clara.
 
-O principal ponto crítico encontrado é de conversão: o WhatsApp publicado ainda aponta para o número padrão `5500000000000`. Isso precisa ser corrigido nas variáveis de ambiente da Vercel para evitar perda direta de leads.
+Atualização: os dados públicos de WhatsApp, GitHub e LinkedIn foram configurados no projeto. Após o próximo deploy, é necessário validar se o HTML publicado já aponta para o WhatsApp real.
 
 ## Pontuação Geral
 
@@ -18,7 +18,7 @@ O principal ponto crítico encontrado é de conversão: o WhatsApp publicado ain
 | Conteúdo e intenção de busca | 8/10 | Forte |
 | Dados estruturados | 8/10 | Forte |
 | Performance e experiência | 8/10 | Boa base |
-| Conversão | 6.5/10 | Boa estrutura, mas com risco crítico no WhatsApp |
+| Conversão | 8/10 | Boa estrutura e canais reais configurados |
 | Autoridade e crescimento orgânico | 5/10 | Precisa de conteúdo e sinais externos |
 
 Nota geral estimada: 7.5/10.
@@ -112,29 +112,30 @@ Pontos fortes:
 - FAQ remove objeções comuns antes do contato.
 - Planos com preço inicial ajudam a qualificar leads.
 
-Ponto crítico:
+Ponto de atenção:
 
-- O link público do WhatsApp está usando o número padrão:
-
-```text
-https://wa.me/5500000000000
-```
-
-Impacto: alto. O visitante pode clicar para pedir orçamento e não chegar ao contato real.
-
-Correção recomendada na Vercel:
+- O WhatsApp real configurado no projeto é:
 
 ```text
-NEXT_PUBLIC_WHATSAPP_NUMBER=55DDDNUMERO
+https://wa.me/5514991920560
 ```
 
-Exemplo:
+Impacto: positivo. Isso reduz perda de leads e permite que os CTAs levem para um canal de contato válido.
+
+Variável correspondente:
 
 ```text
-NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
+NEXT_PUBLIC_WHATSAPP_NUMBER=5514991920560
 ```
 
-Depois de configurar, faça um novo deploy.
+Perfis sociais configurados:
+
+```text
+NEXT_PUBLIC_GITHUB_URL=https://github.com/ismaeldevweb-afk
+NEXT_PUBLIC_LINKEDIN_URL=https://www.linkedin.com/in/ismael-nunes-dos-santos
+```
+
+Depois do deploy, valide o HTML publicado para confirmar que os links reais estão ativos.
 
 ## Sitemap e Robots
 
@@ -187,11 +188,11 @@ Avaliação: forte. Esses headers não ranqueiam diretamente por si só, mas aju
 
 ### Alta prioridade
 
-1. Corrigir o número do WhatsApp na Vercel.
-2. Configurar `NEXT_PUBLIC_CONTACT_EMAIL` real.
-3. Configurar `NEXT_PUBLIC_GITHUB_URL` e `NEXT_PUBLIC_LINKEDIN_URL` reais.
-4. Cadastrar o domínio no Google Search Console.
-5. Enviar o sitemap no Search Console.
+1. Configurar `NEXT_PUBLIC_CONTACT_EMAIL` real.
+2. Cadastrar o domínio no Google Search Console.
+3. Enviar o sitemap no Search Console.
+4. Validar no site publicado se WhatsApp, GitHub e LinkedIn estão corretos após o deploy.
+5. Acompanhar cliques e visitas no Vercel Analytics.
 
 ### Média prioridade
 
@@ -211,8 +212,8 @@ Avaliação: forte. Esses headers não ranqueiam diretamente por si só, mas aju
 
 Primeiros 7 dias:
 
-- Corrigir WhatsApp, e-mail e links sociais.
-- Conferir se o novo deploy mostra o número correto.
+- Configurar e-mail real.
+- Conferir se o novo deploy mostra WhatsApp, GitHub e LinkedIn corretos.
 - Cadastrar site no Google Search Console.
 - Enviar sitemap.
 
@@ -231,6 +232,6 @@ Próximos 90 dias:
 
 ## Conclusão
 
-O projeto está bem preparado tecnicamente para indexação e tem uma estrutura comercial melhor que a média de sites institucionais simples. A maior perda possível hoje não está no Google, mas na conversão: o WhatsApp precisa ser configurado com o número real.
+O projeto está bem preparado tecnicamente para indexação e tem uma estrutura comercial melhor que a média de sites institucionais simples. Com WhatsApp, GitHub e LinkedIn configurados, o próximo ponto de atenção é validar o deploy publicado e configurar um e-mail real.
 
 Depois dessa correção, o próximo salto de SEO virá da criação de páginas específicas para serviços e nichos, porque uma única home dificilmente cobre todas as buscas comerciais relevantes.

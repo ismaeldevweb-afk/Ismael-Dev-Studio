@@ -1,8 +1,8 @@
 const defaultSiteUrl = "https://ismaeldevstudio.vercel.app";
-const defaultWhatsappNumber = "5500000000000";
+const defaultWhatsappNumber = "5514991920560";
 const defaultContactEmail = "contato@exemplo.com";
-const defaultGithubUrl = "https://github.com/seu-usuario";
-const defaultLinkedinUrl = "https://www.linkedin.com/in/seu-usuario";
+const defaultGithubUrl = "https://github.com/ismaeldevweb-afk";
+const defaultLinkedinUrl = "https://www.linkedin.com/in/ismael-nunes-dos-santos";
 
 const trimTrailingSlash = (value: string): string => value.replace(/\/+$/, "");
 
@@ -42,13 +42,13 @@ export const linkedinUrl =
   process.env.NEXT_PUBLIC_LINKEDIN_URL || defaultLinkedinUrl;
 export const socialPreviewUrl = `${siteUrl}/social-preview.svg`;
 
-export const hasRealWhatsappNumber = whatsappNumber !== defaultWhatsappNumber;
+export const hasRealWhatsappNumber = whatsappNumber.length >= 12;
 export const hasRealContactEmail =
   contactEmail !== defaultContactEmail && !contactEmail.includes("exemplo.com");
 export const hasGithubProfile =
-  githubUrl !== defaultGithubUrl && !githubUrl.includes("seu-usuario");
+  githubUrl.includes("github.com/") && !githubUrl.includes("seu-usuario");
 export const hasLinkedinProfile =
-  linkedinUrl !== defaultLinkedinUrl && !linkedinUrl.includes("seu-usuario");
+  linkedinUrl.includes("linkedin.com/in/") && !linkedinUrl.includes("seu-usuario");
 
 const whatsappMessage = encodeURIComponent(
   "Olá, Ismael! Quero solicitar um orçamento para minha vitrine digital."

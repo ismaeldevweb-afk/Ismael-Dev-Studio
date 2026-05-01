@@ -87,19 +87,19 @@ As configurações públicas do site ficam em `src/config/site.ts` e podem ser s
 | Variável | Descrição | Exemplo |
 | --- | --- | --- |
 | `NEXT_PUBLIC_SITE_URL` | URL pública do site usada em metadados, sitemap e Open Graph. | `https://seudominio.com` |
-| `NEXT_PUBLIC_WHATSAPP_NUMBER` | Número do WhatsApp com código do país e DDD. | `5511999999999` |
+| `NEXT_PUBLIC_WHATSAPP_NUMBER` | Número do WhatsApp com código do país e DDD. | `5514991920560` |
 | `NEXT_PUBLIC_CONTACT_EMAIL` | E-mail de contato exibido/usado pelo site. | `contato@seudominio.com` |
-| `NEXT_PUBLIC_GITHUB_URL` | Link do perfil ou organização no GitHub. | `https://github.com/usuario` |
-| `NEXT_PUBLIC_LINKEDIN_URL` | Link do perfil do LinkedIn. | `https://www.linkedin.com/in/usuario` |
+| `NEXT_PUBLIC_GITHUB_URL` | Link do perfil ou organização no GitHub. | `https://github.com/ismaeldevweb-afk` |
+| `NEXT_PUBLIC_LINKEDIN_URL` | Link do perfil do LinkedIn. | `https://www.linkedin.com/in/ismael-nunes-dos-santos` |
 
 Crie um arquivo `.env.local` para desenvolvimento local:
 
 ```bash
 NEXT_PUBLIC_SITE_URL=http://localhost:3001
-NEXT_PUBLIC_WHATSAPP_NUMBER=5511999999999
+NEXT_PUBLIC_WHATSAPP_NUMBER=5514991920560
 NEXT_PUBLIC_CONTACT_EMAIL=contato@seudominio.com
-NEXT_PUBLIC_GITHUB_URL=https://github.com/usuario
-NEXT_PUBLIC_LINKEDIN_URL=https://www.linkedin.com/in/usuario
+NEXT_PUBLIC_GITHUB_URL=https://github.com/ismaeldevweb-afk
+NEXT_PUBLIC_LINKEDIN_URL=https://www.linkedin.com/in/ismael-nunes-dos-santos
 ```
 
 O arquivo `.env.local` não deve ser commitado.
