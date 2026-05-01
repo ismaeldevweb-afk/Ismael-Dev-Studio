@@ -13,7 +13,7 @@ interface ServicePageTemplateProps {
 export default function ServicePageTemplate({ page }: ServicePageTemplateProps) {
   return (
     <main className="min-h-screen bg-white text-slate-950">
-      <Header />
+      <Header homeHrefPrefix="/" />
 
       <section
         id="inicio"
@@ -159,7 +159,7 @@ export default function ServicePageTemplate({ page }: ServicePageTemplateProps) 
         </div>
       </section>
 
-      <Footer />
+      <Footer homeHrefPrefix="/" />
       <WhatsAppFloat />
     </main>
   );

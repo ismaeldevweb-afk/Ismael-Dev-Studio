@@ -13,7 +13,11 @@ import {
   servicePages,
 } from "@/interfaces/data/site-content";
 
-export default function Footer() {
+interface FooterProps {
+  homeHrefPrefix?: "" | "/";
+}
+
+export default function Footer({ homeHrefPrefix = "" }: FooterProps) {
   const contactLinks = [
     { href: whatsappUrl, label: "Solicitar orçamento no WhatsApp", icon: MessageCircle },
     hasRealContactEmail
@@ -58,7 +62,7 @@ export default function Footer() {
             {navigationItems.map((item) => (
               <a
                 key={item.href}
-                href={item.href}
+                href={`${homeHrefPrefix}${item.href}`}
                 className="transition hover:text-white"
               >
                 {item.label}

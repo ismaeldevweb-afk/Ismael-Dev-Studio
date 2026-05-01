@@ -8,7 +8,7 @@ import SectionLabel from "@/interfaces/components/marketing/SectionLabel";
 
 export default function StrategicSeo() {
   return (
-    <section id="seo-conversao" className="bg-white px-5 py-20 lg:px-8">
+    <section id="seo" className="bg-white px-5 py-20 lg:px-8">
       <div className="mx-auto grid max-w-7xl gap-10 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
         <div>
           <SectionLabel>SEO e conversão</SectionLabel>

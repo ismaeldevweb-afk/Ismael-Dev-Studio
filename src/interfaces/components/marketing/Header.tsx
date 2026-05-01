@@ -2,7 +2,11 @@ import { Code2, Menu, X } from "lucide-react";
 import { whatsappUrl } from "@/config/site";
 import { navigationItems } from "@/interfaces/data/site-content";
 
-export default function Header() {
+interface HeaderProps {
+  homeHrefPrefix?: "" | "/";
+}
+
+export default function Header({ homeHrefPrefix = "" }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/85 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
@@ -25,7 +29,11 @@ export default function Header() {
           aria-label="Navegação principal"
         >
           {navigationItems.map((item) => (
-            <a key={item.href} className="transition hover:text-blue-600" href={item.href}>
+            <a
+              key={item.href}
+              className="transition hover:text-blue-600"
+              href={`${homeHrefPrefix}${item.href}`}
+            >
               {item.label}
             </a>
           ))}
@@ -52,7 +60,7 @@ export default function Header() {
                 {navigationItems.map((item) => (
                   <a
                     key={item.href}
-                    href={item.href}
+                    href={`${homeHrefPrefix}${item.href}`}
                     className="rounded-xl px-3 py-2 transition hover:bg-slate-50 hover:text-blue-600"
                   >
                     {item.label}

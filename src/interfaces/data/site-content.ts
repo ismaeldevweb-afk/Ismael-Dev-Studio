@@ -21,12 +21,12 @@ import type {
 } from "@/interfaces/types/site";
 
 export const navigationItems: readonly NavigationItem[] = [
-  { label: "Serviços", href: "/#servicos" },
-  { label: "Projetos", href: "/#projetos" },
-  { label: "SEO", href: "/#seo-conversao" },
-  { label: "Processo", href: "/#processo" },
-  { label: "Planos", href: "/#planos" },
-  { label: "Sobre", href: "/#sobre" },
+  { label: "Serviços", href: "#servicos" },
+  { label: "Projetos", href: "#projetos" },
+  { label: "SEO", href: "#seo" },
+  { label: "Processo", href: "#processo" },
+  { label: "Planos", href: "#planos" },
+  { label: "Sobre", href: "#sobre" },
 ];
 
 export const services: readonly ServiceItem[] = [
@@ -125,7 +125,8 @@ export const steps: readonly StepItem[] = [
   {
     number: "02",
     title: "Estrutura da vitrine",
-    description: "Organizo seções, textos, argumentos e botões para a mensagem ficar objetiva.",
+    description:
+      "Organizo estrutura, textos, argumentos e botões para deixar a mensagem mais objetiva.",
     note: "Conteúdo pensado para ser entendido rápido",
   },
   {

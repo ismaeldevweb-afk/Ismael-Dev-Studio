@@ -49,13 +49,13 @@ export default function Hero() {
             Criação de sites profissionais
           </div>
           <h1 className="max-w-[20rem] text-[2rem] font-extrabold leading-tight tracking-tight text-slate-950 sm:max-w-3xl sm:text-5xl lg:text-6xl">
-            Transformo seu negócio em uma vitrine digital{" "}
-            <span className="text-blue-600">profissional.</span>
+            Tenha um site profissional que leva clientes direto para o{" "}
+            <span className="text-blue-600">WhatsApp.</span>
           </h1>
           <p className="mt-6 max-w-[20rem] text-base leading-8 text-slate-600 sm:max-w-2xl sm:text-lg">
-            Crio sites, landing pages e portfólios modernos para pequenos negócios e
-            profissionais que querem transmitir confiança, atrair clientes e vender
-            melhor na internet.
+            Crio sites, landing pages e portfólios para negócios locais, autônomos e
+            profissionais que precisam apresentar seus serviços com clareza, transmitir
+            confiança e receber pedidos de orçamento.
           </p>
 
           <div className="mt-7 grid w-full min-w-0 max-w-[20rem] gap-3 sm:max-w-none sm:grid-cols-3">
